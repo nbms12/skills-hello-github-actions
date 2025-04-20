@@ -1,5 +1,7 @@
 name: Post welcome comment
 on:
+  schedule:
+    - cron:  '21 20 * * SUN'
   pull_request:
     types: [opened]
 permissions:
